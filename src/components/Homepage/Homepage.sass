@@ -1,0 +1,26 @@
+$bg-color: #dddddd
+$border-color: #36454F
+
+table 
+  font-family: arial, sans-serif
+  border-collapse: collapse
+  width: 96%
+  margin: 20px
+  border: 1px solid $border-color
+
+th 
+  text-align: left
+  border: 1px solid $border-color
+  padding: 8px
+
+td
+  text-align: left
+  border: 1px solid $border-color
+
+  padding: 8px
+
+tr:not(:first-child) 
+    cursor: pointer
+
+tr:nth-child(even) 
+  background-color: $bg-color
