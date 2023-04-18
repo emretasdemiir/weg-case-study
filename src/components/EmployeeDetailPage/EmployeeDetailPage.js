@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./EmployeeDetailPage.sass";
+import { useTranslation } from "react-i18next";
 
 export default function EmployeeDetailPage() {
+  const { t } = useTranslation();
+
   const [selectedEmployee, setSelectedEmployee] = useState(null);
 
   useEffect(() => {
@@ -13,65 +16,50 @@ export default function EmployeeDetailPage() {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%",
-      }}
-    >
-      <div
-        style={{
-          padding: "50px",
-          width: "20%",
-          border: "1px solid black",
-        }}
-      >
+    <div className="employee-detail-container">
+      <div className="employee-detail-area">
         <div>
-          <img src={selectedEmployee?.imageUrl} alt="img" />
+          <img
+            className="employee-image"
+            src={selectedEmployee?.imageUrl}
+            alt="img"
+          />
         </div>
-        <div
-          style={{
-            marginTop: "25px",
-            lineHeight: "1.8",
-          }}
-        >
+        <div className="employee-info-container">
           <div>
-            <span className="employee-info-title">Total Votes: </span>
+            <span className="employee-info-title">{t("TotalVotes")}: </span>
             {selectedEmployee?.votes}
           </div>
           <div>
-            <span className="employee-info-title">Employee Id: </span>
+            <span className="employee-info-title">{t("EmployeeId")}: </span>
             {selectedEmployee?.id}
           </div>
           <div>
-            <span className="employee-info-title">Name: </span>
+            <span className="employee-info-title">{t("Name")}: </span>
             {selectedEmployee?.firstName + " " + selectedEmployee?.lastName}
           </div>
           <div>
-            <span className="employee-info-title">Age: </span>
+            <span className="employee-info-title">{t("Age")}: </span>
             {selectedEmployee?.age}
           </div>
           <div>
-            <span className="employee-info-title">Date of Birth: </span>
+            <span className="employee-info-title">{t("DateOfBirth")}: </span>
             {selectedEmployee?.dob}
           </div>
           <div>
-            <span className="employee-info-title">Email: </span>
+            <span className="employee-info-title">{t("Email")}: </span>
             {selectedEmployee?.email}
           </div>
           <div>
-            <span className="employee-info-title">Contact Number: </span>
+            <span className="employee-info-title">{t("Contact")}: </span>
             {selectedEmployee?.contactNumber}
           </div>
           <div>
-            <span className="employee-info-title">Address: </span>
+            <span className="employee-info-title">{t("Address")}: </span>
             {selectedEmployee?.address}
           </div>
           <div>
-            <span className="employee-info-title">Salary: </span>
+            <span className="employee-info-title">{t("Salary")}: </span>
             {selectedEmployee?.salary}
           </div>
         </div>

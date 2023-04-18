@@ -1,0 +1,16 @@
+export const translationsEn = {
+  ProfileImage: "Profile Image",
+  Name: "Name",
+  Email: "Email",
+  Address: "Address",
+  Contact: "Contact",
+  Vote: "Vote",
+  TotalVotes: "Total Votes",
+  EmployeeId: "Employee Id",
+  Age: "Age",
+  DateOfBirth: "Date Of Birth",
+  Salary: "Salary",
+  SwitchLanguage: "Switch Language",
+  ErrorPageTitle: "Oops! There is no page like that!",
+  GoToHomepage: "Go to Homepage",
+};

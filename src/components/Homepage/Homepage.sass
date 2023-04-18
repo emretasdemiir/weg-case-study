@@ -4,8 +4,7 @@ $border-color: #36454F
 table 
   font-family: arial, sans-serif
   border-collapse: collapse
-  width: 96%
-  margin: 20px
+  margin-top: 20px
   border: 1px solid $border-color
 
 th 
@@ -16,11 +15,25 @@ th
 td
   text-align: left
   border: 1px solid $border-color
-
   padding: 8px
 
-tr:not(:first-child) 
-    cursor: pointer
+tbody
+  cursor: pointer
+
+.employee-photo
+  width: 10%
+  
+.fw-bold
+  font-weight: bold
+
+.input-style
+  width: 50px
+  height: 50px
+  font-size: 20px
+  text-align: center
 
 tr:nth-child(even) 
   background-color: $bg-color
+
+.ml-10
+  margin-left: 10px

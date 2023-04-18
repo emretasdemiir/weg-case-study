@@ -1,0 +1,16 @@
+export const translationsTr = {
+  ProfileImage: "Profil Fotoğrafı",
+  Name: "İsim",
+  Email: "E-posta",
+  Address: "Adres",
+  Contact: "Telefon",
+  Vote: "Oylama",
+  TotalVotes: "Toplam Oy",
+  EmployeeId: "Çalışan No",
+  Age: "Yaş",
+  DateOfBirth: "Doğum Tarihi",
+  Salary: "Maaş",
+  SwitchLanguage: "Dil Değiştir",
+  ErrorPageTitle: "Üzgünüm! Böyle bir sayfa bulunmamaktadır!",
+  GoToHomepage: "Anasayfaya Git",
+};
