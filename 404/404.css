@@ -1,0 +1,27 @@
+.error-page-container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-top    : 30px;
+    height        : 100%;
+    font-size     : 30px;
+}
+
+.title {
+    margin-bottom: 10px;
+    line-height  : 1.8;
+    font-weight  : bold;
+    font-size    : 50px;
+    color        : red;
+}
+
+.navigate-link {
+    font-weight: bold;
+    cursor     : pointer
+}
+
+.navigate-link:hover {
+    padding-bottom: 5px;
+    border-bottom : 8px solid black;
+    transition    : all 0.5s ease-in-out
+}
